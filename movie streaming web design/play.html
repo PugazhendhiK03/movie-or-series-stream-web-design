@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="menu">
+                <i class="fa-solid fa-bars" id="menu-btn" ></i>
+                <div class="sidebar" id="sidebar-menu">
+                    <button id="closeButton" type="button"><i class="fa-solid fa-angle-left"></i>Close</button><br>
+                    <div class="empty0"></div>
+                    <li><a href="home.html">Home</a></li><br>
+                    <li><a href="#">Dubbed Anime</a></li> <br>
+                    <li><a href="#">Subbed Anime</a></li> <br>
+                    <li><a href="#">Genre</a>
+                        <div class="scroll-container">
+                            <ul class="options">
+                              <li><a href="#">+ Adventure</a></li>
+                              <li><a href="#">+ Action</a></li>
+                              <li><a href="#">+ Romance</a></li>
+                              <li><a href="#">+ Comedy</a></li>
+                              <li><a href="#">+ Triller</a></li>
+                              <li><a href="#">+ Horror</a></li>
+                            </ul>
+                        </div>
+                    </li><br>
+                </div>
+            </div>
+            <div class="logo">
+                <h2><a href="#">Movie<span>Site</span></a></h2>
+            </div>
+            <div class="search">
+                <input type="search" name="search" id="search" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            </div>
+            <div id="signin">
+                <a href="#"><button type="search" class="signin">Sign in</button></a>
+            </div>
+        </nav>
+    </header>    
+
+    <div class="empty"></div>
+
+    <div class="side-bar-body">
+            <div class="home">
+                <a href="#"><i class="fa-solid fa-house"></i></a>
+            </div>
+            <div class="favorite">
+                <a href="#"><i class="fa-solid fa-star"></i></a>
+            </div>
+            <div class="watch-later">
+                <a href="#"><i class="fs-sharp fa-solid fa-rectangle-list"></i></a>
+            </div>
+            <div class="download">
+                <a href="#"><i class="fa-solid fa-download"></i></a>
+            </div>
+    </div>
+
+    <section class="video-player">
+        <div class="play">
+            <video  width="900px" height="450px" controls>
+                <source src="./video/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="episodes">
+            <div class="episode-list">
+            <ul>
+                <h2>Episodes<span>List</span></h2>
+                <div class="scroll-container">
+                <a href="#" onclick="playVideo(this)">Ep-1 : New world</a> <br>
+                <a href="#" onclick="playVideo(this)">Ep-2 : New World</a>  <br>
+                <a href="#" onclick="playVideo(this)">Ep-3 : New World</a>  <br>
+                <a href="#" onclick="playVideo(this)">Ep-4 : New World</a>  <br>
+                <a href="#" onclick="playVideo(this)">Ep-5 : New World</a>  <br>
+                <a href="#" onclick="playVideo(this)">Ep-6 : New World</a> <br>
+                <a href="#" onclick="playVideo(this)">Ep-7 : New World</a> <br>
+                <a href="#" onclick="playVideo(this)">Ep-8 : New World </a> <br> 
+                <a href="#" onclick="playVideo(this)">Ep-9 : New World</a><br>
+                <a href="#" onclick="playVideo(this)">Ep-10 : New World</a> <br>
+                <a href="#" onclick="playVideo(this)">Ep-11 : New World</a> <br>
+                </div>
+            </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="similar">
+        <h2>Similar </h2>
+            <ul class="anime-list">
+                <li>
+                    <a href="#"><img src="./image/onepiece-poster.jpg" alt="One piece" class="anime-picture"></a>
+                    <p>One Piece</p>
+                    <p>Genre: Adventure, Action</p>
+                    <p>Episodes: 1168</p>
+                </li>
+                <li>
+                    <a href="demo.html"><img src="./image/dr-stone-s3-poster.webp" alt="Dr. Stone" class="anime-picture"></a>
+                    <p>Dr. Stone: New World</p>
+                    <p>Genre: Adventure, Comedy, Sci-Fiction</p>
+                    <p>Episodes: 11</p>
+                </li>
+                <li>
+                    <a href="#"><img src="./image/demonslayer-s3-poster.png" alt="Demon Slayer" class="anime-picture"></a>
+                    <p>Demon Slayer: Swordsmith Village Arc</p>
+                    <p>Genre: Action, Adventure</p>
+                    <p>Episodes: 13</p>
+                </li>
+                <li>
+                    <a href="#"><img src="./image/i got cheat skill-s1-poster.jpg" alt="I got cheat skill" class="anime-picture"></a>
+                    <p>I Got Cheat Skill</p>
+                    <p>Genre: Fantasy, Isekei, Action</p>
+                    <p>Episodes: 13</p>
+                </li>
+    </section>
+    
+
+
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
